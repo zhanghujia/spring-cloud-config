@@ -1,2 +1,18 @@
+# 如使用记事本打开 缩进不可以使用Tab键 
+spring:
+  profiles:
+    active: dev # 激活开发配置环境 
+---
 server:
-  port: 4001
+  port: 4001 # 端口号 
+spring: 
+  profiles: dev #开发环境 
+  applications:
+    name: spring-cloud-config-dev
+---
+server:
+  port: 4002 # 端口号 
+spring: 
+  profiles: prod # 生产环境 
+  applications:
+    name: spring-cloud-config-prod
