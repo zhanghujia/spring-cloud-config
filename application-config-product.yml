@@ -36,7 +36,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+      defaultZone: http://eureka6001.com:6001/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true #访问路径会显示为IP地址
@@ -74,7 +74,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+      defaultZone: http://eureka6001.com:6001/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true #访问路径会显示为IP地址
